@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 100vh;
+}
+
+.div1{
+    font-size: 30px;
+}
+.div2{
+    display: grid;
+    
+}
+
+.img-produto{
+    width: 50%;
+    height: 50%;
+    padding: 0;
+}
+.adicionar{
+    
+    width: 100vh;
+    height: 50px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    background-color:  rgb(5, 80, 5);
+    
+}

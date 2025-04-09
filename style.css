@@ -184,7 +184,70 @@ form{
     transform: scale(1.03);
 }
 
-/*CORPO DO SITE*/
+.carrinho2{
+    display: none;
+    position: fixed;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    top: 70px;
+    right: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 300px;
+    height: auto;
+
+}
+
+.titulo-carrinho{
+    text-align: center;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.corpo-carrinho{
+    margin: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.total-fc{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+.fc{
+    display: flex;
+    background-color: green;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fc img{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.fc:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.fc1{
+    width: 100%;  
+}
+
+                                       /*CORPO DO SITE*/
 main{
     display: grid;
     margin: 30px;
@@ -195,11 +258,13 @@ main{
 
 .container-produtos{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
     gap: 20px;
     padding: 20px;
     place-items: center;
 }
+
+
 
 .produto{
     width: 100%;
@@ -211,6 +276,10 @@ main{
     text-align: center;
     justify-content: space-between;
 
+}
+
+.produto:hover{
+    transform: scale(1.02);
 }
 
 .img-produto{
@@ -253,9 +322,12 @@ main{
 .preco{
     font-size: 18px;
     font-weight: bold;
-    color: black;
+    color: rgb(8, 155, 20);
 }
 
+.b3{
+    display: flex;
+}
 .botao-vermais{
     margin-top: 10px;
     padding: 10px;
@@ -267,18 +339,53 @@ main{
     cursor: pointer;
 }
 
-.botao-vermais:hover{
-    transform: scale(1.05);
+.botao-vermais a{
+    color: white;
+    text-decoration: none;
 }
+
+.adicionar-ao-carrinho{
+    
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 4px;
+    background-color: rgb(6, 85, 6);
+    font-size: 10px;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-vermais:hover{
+    transform: scale(1.02);
+}
+
+.adicionar-ao-carrinho:hover{
+    transform: scale(1.02);
+}
+
+
 
 
 /*FINAL DA PAGINA*/
-footer{
-    background-color: rgb(0, 0, 0);
+.footer {
     display: grid;
-    width: 100%;
-    height: 90px;
-    border: 1px solid rgb(255, 255, 255);
-
+    place-items: center; /* Centraliza tudo */
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.footer a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
